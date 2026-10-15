@@ -18,7 +18,7 @@ h1{font-size:clamp(2.2rem,6vw,4rem);line-height:1.08;font-weight:900;letter-spac
 .plats{color:var(--mut);margin-top:26px;font-size:.9rem}.price{max-width:440px;margin:0 auto;text-align:center;border:2px solid var(--g);box-shadow:0 0 60px rgba(124,255,79,.15)}
 .amt{font-size:3.6rem;font-weight:900}.amt small{font-size:1rem;color:var(--mut)}.price ul{list-style:none;text-align:left;margin:22px 0}.price li{padding:6px 0;border-bottom:1px solid var(--line)}.price li:before{content:"✓ ";color:var(--g);font-weight:900}
 details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin-bottom:12px;max-width:760px;margin-left:auto;margin-right:auto}summary{cursor:pointer;font-weight:700}details p{color:var(--mut);margin-top:10px}
-form{display:flex;gap:10px;max-width:480px;margin:0 auto;flex-wrap:wrap}input[type=email]{flex:1;min-width:220px;padding:14px 16px;border-radius:12px;border:1px solid var(--line);background:#0f0f19;color:var(--txt);font-size:1rem}
+form{display:flex;gap:10px;max-width:480px;margin:0 auto;flex-wrap:wrap;justify-content:center}input[type=email],select{flex:1;min-width:220px;padding:14px 16px;border-radius:12px;border:1px solid var(--line);background:#0f0f19;color:var(--txt);font-size:1rem}select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--mut) 50%),linear-gradient(135deg,var(--mut) 50%,transparent 50%);background-position:calc(100% - 18px) calc(50% - 3px),calc(100% - 12px) calc(50% - 3px);background-size:6px 6px,6px 6px;background-repeat:no-repeat;padding-right:36px}
 .note{color:var(--mut);font-size:.85rem;margin-top:12px;text-align:center}.cta{background:linear-gradient(135deg,rgba(177,77,255,.2),rgba(124,255,79,.1));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 footer{padding:40px 0;color:var(--mut);text-align:center;font-size:.85rem}.alt{background:#0e0e17}
 </style></head><body>
@@ -68,10 +68,39 @@ footer{padding:40px 0;color:var(--mut);text-align:center;font-size:.85rem}.alt{b
 </div></div></section>
 
 <section class="cta" id="waitlist"><div class="wrap" style="text-align:center"><h2>Stop clipping. Start growing.</h2><p class="lead">Join the waitlist and lock in $15/mo founding pricing.</p>
-<form action="https://formspree.io/f/meaevkgp" method="POST">
+<form action="https://formspree.io/f/meaevkgp" method="POST" id="waitlist-form">
 <input type="email" name="email" placeholder="you@email.com" required aria-label="Email address">
+<select name="source" required aria-label="Where did you hear about us?">
+<option value="" disabled selected>Where'd you hear about us?</option>
+<option value="x">X / Twitter</option>
+<option value="tiktok">TikTok</option>
+<option value="youtube">YouTube Shorts</option>
+<option value="instagram">Instagram / Reels</option>
+<option value="discord">Discord</option>
+<option value="reddit">Reddit</option>
+<option value="friend">Friend / streamer</option>
+<option value="other">Other</option>
+</select>
+<input type="hidden" name="utm_source" id="utm_source" value="">
+<input type="hidden" name="utm_medium" id="utm_medium" value="">
+<input type="hidden" name="utm_campaign" id="utm_campaign" value="">
 <input type="hidden" name="_subject" value="New ClipGremlin waitlist signup">
 <button class="btn" type="submit">Join waitlist</button></form>
+<script>
+(function(){
+  var q=new URLSearchParams(location.search);
+  ['utm_source','utm_medium','utm_campaign'].forEach(function(k){
+    var el=document.getElementById(k); if(el) el.value=q.get(k)||'';
+  });
+  var src=q.get('utm_source');
+  if(src){
+    var sel=document.querySelector('#waitlist-form select[name=source]');
+    var map={x:'x',twitter:'x',tiktok:'tiktok',reddit:'reddit',discord:'discord',yt:'youtube',youtube:'youtube',ig:'instagram',instagram:'instagram'};
+    var v=map[(src||'').toLowerCase()];
+    if(sel&&v){ sel.value=v; }
+  }
+})();
+</script>
 <p class="note">No spam. Just one email when your spot opens.</p></div></section>
 <footer>© 2026 ClipGremlin · Not affiliated with Twitch, Kick, YouTube, TikTok, or Meta.</footer>
 </body></html>
