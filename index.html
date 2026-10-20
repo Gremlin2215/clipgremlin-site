@@ -40,6 +40,7 @@ form{display:flex;gap:10px;max-width:480px;margin:0 auto;flex-wrap:wrap;justify-
 .note{color:var(--mut);font-size:.85rem;margin-top:12px;text-align:center}.cta{background:linear-gradient(135deg,rgba(30,58,107,.16),rgba(143,174,90,.28));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 footer{padding:40px 0;color:var(--mut);background:#EADFC8;text-align:center;font-size:.85rem}footer a{color:var(--navy)}.alt{background:var(--alt)}
 .logo{display:flex;align-items:center;gap:10px}.logo-mark{width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid var(--navy);flex:none}.hero-mascot{display:block;width:min(680px,100%);height:auto;margin:38px auto 0;border-radius:20px;border:1px solid var(--taupe)}
+.clips{display:grid;gap:22px;grid-template-columns:repeat(3,1fr);max-width:900px;margin:0 auto}.clip{padding:12px;text-align:center}.clip video{display:block;width:100%;height:auto;aspect-ratio:9/16;border-radius:12px;background:var(--charcoal);object-fit:cover}.clip h3{margin:12px 0 2px}@media(max-width:700px){.clips{grid-template-columns:1fr;max-width:340px}}
 </style></head><body>
 <header class="hero"><div class="wrap">
 <nav><div class="logo"><img class="logo-mark" src="/assets/mascot-avatar.jpg" alt="ClipGremlin mascot" width="42" height="42">Clip<span>Gremlin</span></div><a class="btn ghost" href="#waitlist">Join waitlist</a></nav>
@@ -62,6 +63,8 @@ footer{padding:40px 0;color:var(--mut);background:#EADFC8;text-align:center;font
 <div class="card step"><div class="num">3</div><h3>Clips land in Discord</h3><p>When you end stream, we pull the VOD and send 5–10 ready-to-post clips.</p></div>
 <div class="card step"><div class="num">4</div><h3>One tap to post</h3><p>Approve and post to TikTok, Shorts, and Reels in one tap.</p></div>
 </div></div></section>
+
+<section id="examples"><div class="wrap"><h2>See it in action</h2><p class="lead">The kind of vertical, captioned clips that land in your Discord.</p><div class="clips"><div class="card clip"><video controls muted playsinline preload="none" poster="/clips/bot-door.jpg" width="720" height="1280"><source src="/clips/bot-door.mp4" type="video/mp4"></video><h3>the bot vs. the door</h3></div><div class="card clip"><video controls muted playsinline preload="none" poster="/clips/mom.jpg" width="720" height="1280"><source src="/clips/mom.mp4" type="video/mp4"></video><h3>teaching mom fortnite</h3></div><div class="card clip"><video controls muted playsinline preload="none" poster="/clips/triple-elim.jpg" width="720" height="1280"><source src="/clips/triple-elim.mp4" type="video/mp4"></video><h3>3 down, 0 damage</h3></div></div><p class="note" style="margin-top:28px">Examples hand-cut to show what ClipGremlin will make. The product isn't live yet. Join the waitlist to get in first.</p><p style="text-align:center;margin-top:16px"><a class="btn" href="#waitlist">Join the waitlist →</a></p></div></section>
 
 <section><div class="wrap"><h2>Built for personality, not just highlights</h2><p class="lead">Your funny moments are what make people follow. We clip those.</p><div class="grid">
 <div class="card"><div class="ic">📈</div><h3>Chat-spike detection</h3><p>When chat explodes, we notice. Hype, laughs, "LMAO" floods, all of it.</p></div>
