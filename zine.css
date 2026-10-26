@@ -1,0 +1,22 @@
+/* ClipGremlin zine overrides for secondary pages */
+:root{--bg:#efe9dc;--card:#f6f1e6;--line:#151311;--txt:#151311;--mut:#3a3631;--navy:#151311;--olive:#e2361b;--sage:#151311;--taupe:#151311;--alt:#e7e0d0}
+body{font-family:"IBM Plex Mono",monospace!important;background:#efe9dc!important;color:#151311;font-size:15px}
+a{color:#151311;text-decoration-color:#e2361b}
+h1,h2,h3,.amt,.logo,summary{font-family:Fraunces,serif!important;color:#151311!important;letter-spacing:-.03em!important}
+h1{font-weight:900!important;line-height:.92!important}
+h1 em{background:none!important;-webkit-background-clip:initial!important;color:#e2361b!important;font-style:italic!important;font-weight:400!important}
+.hero,.cta,.alt,footer{background:#efe9dc!important;box-shadow:none!important}
+section,.hero,footer{border-bottom:2px solid #151311}
+.wrap{max-width:1080px}
+.btn{background:#151311!important;color:#efe9dc!important;border-radius:0!important;font-family:"IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.06em;font-size:14px!important;filter:none!important}
+.btn:hover{background:#e2361b!important}
+.ghost{background:transparent!important;color:#151311!important;border:2px solid #151311!important}
+.card,details,.price{background:#f6f1e6!important;border:2px solid #151311!important;border-radius:0!important;box-shadow:none!important}
+.tag{border-radius:0!important;background:#f7d84a!important;border:0!important;color:#151311!important;text-transform:uppercase;font-size:12px!important;transform:rotate(-2deg)}
+.num{background:none!important;color:#e2361b!important;font-family:Fraunces,serif;font-size:48px;width:auto!important;height:auto!important;border-radius:0!important}
+.ic{display:none}
+.terms li:before,.price li:before{content:"— "!important;color:#e2361b!important}
+input,select,textarea{border-radius:0!important;border:2px solid #151311!important;background:#fff8ea!important;font-family:"IBM Plex Mono",monospace!important}
+.logo-mark{border:2px solid #151311!important}
+.fc-mascot,.hero-mascot{border:0!important;border-radius:0!important;background:none}
+.sub,.lead,.note,details p,.card p{color:#3a3631!important}

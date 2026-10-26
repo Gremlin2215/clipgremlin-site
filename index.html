@@ -1,133 +1,132 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ClipGremlin: AI Stream Clipper for Small Twitch, Kick &amp; YouTube Streamers</title>
-<meta name="description" content="ClipGremlin is an AI clip agent for small streamers (coming soon). It turns your Twitch, Kick or YouTube VOD into funny, captioned, hook-first vertical clips. Join the waitlist: $15/mo founding price.">
-<link rel="canonical" href="https://clipgremlin.com/">
-<meta name="robots" content="index,follow">
-<meta name="theme-color" content="#F6EEDF">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>ClipGremlin — your first clip, edited free</title>
+<meta name="description" content="ClipGremlin is a pre-launch clip editing service for small streamers. Send one VOD timestamp and get your first vertical clip for TikTok, Shorts and Reels edited free.">
+<link rel="canonical" href="https://clipgremlin.com/"><meta name="robots" content="index,follow"><meta name="theme-color" content="#efe9dc">
 <link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32"><link rel="icon" href="/favicon.png" type="image/png" sizes="64x64"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:type" content="website"><meta property="og:site_name" content="ClipGremlin"><meta property="og:url" content="https://clipgremlin.com/">
-<meta property="og:title" content="ClipGremlin: Your stream ends. Your clips are ready.">
-<meta property="og:description" content="AI clip agent for small streamers. Funny, captioned vertical clips after every stream. Waitlist open, $15/mo founding price.">
-<meta property="og:image" content="https://clipgremlin.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="ClipGremlin: Your stream ends. Your clips are ready.">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@ClipGremlinHQ">
-<meta name="twitter:title" content="ClipGremlin: Your stream ends. Your clips are ready.">
-<meta name="twitter:description" content="AI clip agent for small streamers. Funny, captioned vertical clips after every stream. Waitlist open.">
-<meta name="twitter:image" content="https://clipgremlin.com/og-image.png">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[
-{"@type":"Organization","@id":"https://clipgremlin.com/#org","name":"ClipGremlin","url":"https://clipgremlin.com/","logo":"https://clipgremlin.com/apple-touch-icon.png","sameAs":["https://x.com/ClipGremlinHQ","https://www.tiktok.com/@clipgremlinhq"]},
-{"@type":"SoftwareApplication","name":"ClipGremlin","applicationCategory":"MultimediaApplication","operatingSystem":"Web","url":"https://clipgremlin.com/","description":"AI clip agent that turns Twitch, Kick and YouTube stream VODs into captioned vertical clips for TikTok, Shorts and Reels. Currently in waitlist / pre-launch.","publisher":{"@id":"https://clipgremlin.com/#org"},
-"offers":{"@type":"Offer","price":"15","priceCurrency":"USD","availability":"https://schema.org/PreOrder","url":"https://clipgremlin.com/#waitlist"}}]}
-</script>
+<meta property="og:title" content="ClipGremlin: your first clip, edited free"><meta property="og:description" content="Clip editing for small streamers. Pre-launch. Your first vertical clip is free.">
+<meta property="og:image" content="https://clipgremlin.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@ClipGremlinHQ"><meta name="twitter:title" content="ClipGremlin: your first clip, edited free"><meta name="twitter:description" content="Clip editing for small streamers. Pre-launch. Your first vertical clip is free."><meta name="twitter:image" content="https://clipgremlin.com/og-image.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ClipGremlin","url":"https://clipgremlin.com/","logo":"https://clipgremlin.com/apple-touch-icon.png","email":"hello@clipgremlin.com","sameAs":["https://x.com/ClipGremlinHQ","https://www.tiktok.com/@clipgremlinhq","https://www.youtube.com/@ClipGremlinHQ-f3l"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,800;9..144,900&family=Great+Vibes&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#F6EEDF;--card:#FFFDF7;--line:#C9B99B;--txt:#243044;--mut:#6F7566;--g:#8FAE5A;--p:#1E3A6B;--navy:#1E3A6B;--navy2:#24457E;--sage:#8FAE5A;--olive:#5F8436;--taupe:#B8A88F;--tan:#D9BE94;--charcoal:#2B2F36;--alt:#E6E8D2}
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
-a{color:var(--olive)}.wrap{max-width:1080px;margin:0 auto;padding:0 20px}section{padding:80px 0}
-nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}.logo{font-weight:900;font-size:1.4rem;letter-spacing:-.5px;color:var(--navy)}.logo span{color:var(--olive)}
-.btn{display:inline-block;background:linear-gradient(90deg,var(--sage),var(--olive));color:#FFFDF7;font-weight:800;padding:14px 26px;border-radius:12px;text-decoration:none;border:0;cursor:pointer;font-size:1rem}
-.btn:hover{filter:brightness(1.08);background:linear-gradient(90deg,var(--navy),var(--navy2));color:#FFFDF7}.ghost{background:#FFFDF7;border:1px solid var(--taupe);color:var(--navy)}
-.hero{text-align:center;padding:70px 0 90px;background:radial-gradient(ellipse at top,rgba(143,174,90,.38),transparent 60%),linear-gradient(180deg,#D9BE94,#F6EEDF)}
-.tag{display:inline-block;border:1px solid var(--navy);color:var(--navy);background:rgba(255,253,247,.65);padding:4px 14px;border-radius:99px;font-size:.85rem;margin-bottom:22px}
-h1{font-size:clamp(2.2rem,6vw,4rem);line-height:1.08;font-weight:900;letter-spacing:-1.5px;color:var(--navy)}h1 em{font-style:normal;background:linear-gradient(90deg,var(--olive),var(--navy));-webkit-background-clip:text;background-clip:text;color:transparent}
-.sub{color:#4A5568;font-size:1.2rem;max-width:640px;margin:22px auto 34px}h2{font-size:clamp(1.7rem,4vw,2.5rem);font-weight:900;text-align:center;margin-bottom:12px;letter-spacing:-.5px;color:var(--navy)}
-.lead{text-align:center;color:var(--mut);max-width:620px;margin:0 auto 44px}.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}.card h3{margin:8px 0 6px;font-size:1.1rem;color:var(--navy)}.card p{color:var(--mut);font-size:.95rem}.ic{font-size:1.8rem}
-.step{position:relative}.num{width:38px;height:38px;border-radius:10px;background:var(--navy);color:#FFFDF7;display:grid;place-items:center;font-weight:900}
-.plats{color:#4A5568;margin-top:26px;font-size:.9rem}.price{max-width:440px;margin:0 auto;text-align:center;border:2px solid var(--olive);box-shadow:0 0 60px rgba(143,174,90,.35)}
-.amt{font-size:3.6rem;font-weight:900;color:var(--navy)}.amt small{font-size:1rem;color:var(--mut)}.price ul{list-style:none;text-align:left;margin:22px 0}.price li{padding:6px 0;border-bottom:1px solid var(--line)}.price li:before{content:"✓ ";color:var(--olive);font-weight:900}
-details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin-bottom:12px;max-width:760px;margin-left:auto;margin-right:auto}summary{cursor:pointer;font-weight:700;color:var(--navy)}details p{color:var(--mut);margin-top:10px}
-form{display:flex;gap:10px;max-width:480px;margin:0 auto;flex-wrap:wrap;justify-content:center}input[type=email],select{flex:1;min-width:220px;padding:14px 16px;border-radius:12px;border:1px solid var(--taupe);background:#FFFDF7;color:var(--txt);font-size:1rem}select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--mut) 50%),linear-gradient(135deg,var(--mut) 50%,transparent 50%);background-position:calc(100% - 18px) calc(50% - 3px),calc(100% - 12px) calc(50% - 3px);background-size:6px 6px,6px 6px;background-repeat:no-repeat;padding-right:36px}
-.note{color:var(--mut);font-size:.85rem;margin-top:12px;text-align:center}.cta{background:linear-gradient(135deg,rgba(30,58,107,.16),rgba(143,174,90,.28));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-footer{padding:40px 0;color:var(--mut);background:#EADFC8;text-align:center;font-size:.85rem}footer a{color:var(--navy)}.alt{background:var(--alt)}
-.logo{display:flex;align-items:center;gap:10px}.logo-mark{width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid var(--navy);flex:none}.hero-mascot{display:block;width:min(680px,100%);height:auto;margin:38px auto 0;border-radius:20px;border:1px solid var(--taupe)}
-.clips{display:grid;gap:22px;grid-template-columns:repeat(3,1fr);max-width:900px;margin:0 auto}.clip{padding:12px;text-align:center}.clip video{display:block;width:100%;height:auto;aspect-ratio:9/16;border-radius:12px;background:var(--charcoal);object-fit:cover}.clip h3{margin:12px 0 2px}@media(max-width:700px){.clips{grid-template-columns:1fr;max-width:340px}}
-
-.banner{display:block;background:var(--navy);color:#FFFDF7;text-align:center;padding:10px 16px;font-weight:700;font-size:.95rem;text-decoration:none;line-height:1.4}
-.banner b{color:#CFE3A8}.banner span{display:inline-block;margin-left:6px;background:var(--sage);color:var(--navy);border-radius:99px;padding:2px 12px;font-weight:900;white-space:nowrap}
-.banner:hover span{background:#FFFDF7}
+:root{--paper:#efe9dc;--ink:#151311;--red:#e2361b;--rule:2px solid var(--ink)}
+*{box-sizing:border-box;margin:0}
+body{background:var(--paper);color:var(--ink);font:16px/1.55 "IBM Plex Mono",monospace}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.mast{border-bottom:var(--rule);display:flex;justify-content:space-between;align-items:baseline;padding:14px 0;font-size:13px;text-transform:uppercase;letter-spacing:.08em}
+.mast b{font-family:Fraunces,serif;font-size:26px;text-transform:none;letter-spacing:-.02em}
+.issue{border-bottom:var(--rule);display:flex;gap:28px;padding:6px 0;font-size:12px;text-transform:uppercase}
+.hero{display:grid;grid-template-columns:1.35fr 1fr;gap:40px;padding:56px 0 48px;border-bottom:var(--rule)}
+h1{font-family:Fraunces,serif;font-weight:900;font-size:clamp(54px,8.4vw,118px);line-height:.88;letter-spacing:-.045em}
+h1 em{font-style:italic;font-weight:400;color:var(--red)}
+.dek{font-size:17px;max-width:34em;margin:28px 0}
+.btn{display:inline-block;background:var(--ink);color:var(--paper);padding:14px 22px;text-decoration:none;font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:14px;border:0;cursor:pointer;font-family:inherit}
+.btn:hover{background:var(--red)}
+.small{font-size:12px;margin-top:12px;opacity:.75}
+.phone{justify-self:center;transform:rotate(2.5deg);background:var(--ink);padding:10px;border-radius:26px;width:280px;box-shadow:10px 10px 0 var(--red)}
+.phone video{width:100%;border-radius:18px;display:block}
+.tape{font-size:12px;text-transform:uppercase;background:#f7d84a;display:inline-block;padding:4px 10px;transform:rotate(-3deg) translate(-30px,-14px)}
+.sec{padding:56px 0;border-bottom:var(--rule)}
+.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--red);font-weight:600}
+h2{font-family:Fraunces,serif;font-weight:800;font-size:clamp(36px,5vw,64px);line-height:.95;letter-spacing:-.03em;margin:8px 0 28px}
+.reel{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.reel figure video{width:100%;aspect-ratio:9/16;object-fit:cover;border:var(--rule);display:block;filter:contrast(1.05)}
+.reel figcaption{font-size:13px;margin-top:8px}
+.reel figcaption b{display:block;font-family:Fraunces,serif;font-size:20px;line-height:1.1}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);border-top:var(--rule)}
+.steps div{padding:22px 22px 8px 0;border-right:1px solid var(--ink);margin-right:22px}
+.steps div:last-child{border:0}
+.steps .n{font-family:Fraunces,serif;font-size:64px;font-weight:900;color:var(--red);line-height:1}
+.rules{columns:2;column-gap:48px;column-rule:1px solid var(--ink);font-size:15px}
+.rules p{break-inside:avoid;margin-bottom:16px}
+.rules p::first-letter{font-family:Fraunces,serif;font-weight:900;font-size:1.6em}
+form{display:flex;gap:0;max-width:620px;margin-top:8px;border:var(--rule)}
+input{flex:1;padding:14px;font:inherit;background:#fff8ea;border:0}
+.proof{display:grid;grid-template-columns:1fr 1fr .62fr;gap:28px;align-items:end}.proof figure{border-top:var(--rule);padding-top:14px}.proof video,.proof img{width:100%;aspect-ratio:9/16;object-fit:cover;border:var(--rule);display:block}.big{font-family:Fraunces,serif;font-weight:900;font-size:clamp(56px,7vw,96px);line-height:.9;letter-spacing:-.04em;color:var(--red)}.big small{font-size:.3em;color:var(--ink);letter-spacing:0;font-weight:800}.proof figcaption{font-size:13px;margin-top:10px}.proof figcaption b{display:block;font-family:Fraunces,serif;font-size:21px;line-height:1.1}.minor .big{font-size:44px}.tally{display:flex;gap:20px;align-items:baseline;flex-wrap:wrap;margin:-10px 0 30px;font-size:14px}.tally .big{font-size:clamp(64px,9vw,128px)}
+.logo{display:flex;align-items:center;gap:10px}.logo img{width:40px;height:40px;border-radius:50%;border:var(--rule);object-fit:cover}
+.meet{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:end;padding:40px 0 0;border-bottom:var(--rule)}
+.meet img{width:100%;max-width:460px;display:block;justify-self:center}
+.meet .txt{padding-bottom:48px}.sig{font-family:"Great Vibes",cursive;font-size:56px;line-height:1;color:var(--ink);margin:6px 0 14px}
+.meet p{max-width:30em}
+.foot{padding:28px 0 48px;display:flex;justify-content:space-between;font-size:13px;flex-wrap:wrap;gap:12px}
+@media(max-width:820px){.meet{grid-template-columns:1fr;gap:0}.meet .txt{order:-1;padding-bottom:16px}.meet img{max-width:300px}.sig{font-size:44px}.logo img{width:32px;height:32px}.proof{grid-template-columns:1fr 1fr;gap:16px;align-items:start}.proof .minor{grid-column:1/-1;display:grid;grid-template-columns:110px 1fr;gap:14px;align-items:end}.big{font-size:48px}.mast{flex-wrap:wrap;gap:4px 12px;font-size:11px}.mast span{order:3;width:100%}.issue{gap:14px;font-size:11px}.dek{font-size:15px}body{font-size:15px}.phone{width:240px}.tape{transform:rotate(-3deg) translate(10px,-10px)}.hero{grid-template-columns:1fr}.reel{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}.steps div{border:0;border-bottom:1px solid var(--ink);margin:0}.rules{columns:1}.issue span:nth-child(n+3){display:none}form{flex-direction:column}}
 </style></head><body>
-<a class="banner" href="/free-clip/">🎁 <b>Free clip</b> for the first 25 streamers: we'll clip your best moment, free. <span>Claim yours →</span></a>
-<header class="hero"><div class="wrap">
-<nav><div class="logo"><img class="logo-mark" src="/assets/mascot-avatar.jpg" alt="ClipGremlin mascot" width="42" height="42">Clip<span>Gremlin</span></div><a class="btn ghost" href="#waitlist">Join waitlist</a></nav>
-<div style="margin-top:60px"><div class="tag">Early access · Founding price $15/mo</div>
-<h1>Your stream ends.<br><em>Your clips are ready.</em></h1>
-<p class="sub">An AI clip agent for small streamers. It finds your funniest, most <i>you</i> moments, not just the kills, and drops 5–10 vertical, captioned, hook-first clips in your Discord after every stream.</p>
-<a class="btn" href="#waitlist">Get early access →</a><p class="plats">Works with Twitch · Kick · YouTube → posts to TikTok · Shorts · Reels</p><img class="hero-mascot" src="/assets/mascot-full.jpg" alt="ClipGremlin mascot — a navy-haired gremlin wearing a gaming headset, holding scissors and a strip of film" width="1280" height="720" decoding="async"></div></div></header>
+<div class="wrap">
+<header class="mast"><b class="logo"><img src="/img/mark-96.png" alt="">ClipGremlin</b><span>Clip editing for small streamers</span><a href="#free">Free clip →</a></header>
+<div class="issue"><span>No. 001</span><span>Pre-launch · waitlist only</span><span>Hand-edited, one clip at a time</span></div>
 
-<section><div class="wrap"><h2>Clipping is a second job</h2><p class="lead">You streamed for 4 hours. Now you're supposed to scrub the VOD, crop, caption, and post? Nah.</p>
-<div class="grid">
-<div class="card"><div class="ic">⏳</div><h3>Hours of scrubbing</h3><p>Finding the good bits in a long VOD eats the time you'd rather spend streaming.</p></div>
-<div class="card"><div class="ic">🤖</div><h3>AI that misses the moment</h3><p>Generic clippers grab random kills and skip the bits that make chat lose it.</p></div>
-<div class="card"><div class="ic">💸</div><h3>Credits that run out</h3><p>Per-minute pricing punishes long streams. Billing that's hard to cancel doesn't help.</p></div>
-<div class="card"><div class="ic">📉</div><h3>No shorts, no growth</h3><p>Short-form is how small channels get found. Skipping it keeps you stuck.</p></div>
-</div></div></section>
+<section class="hero">
+<div>
+<h1>Send us your best moment. We'll make it <em>hit.</em></h1>
+<p class="dek">Send one VOD timestamp. Get back a vertical clip with a real hook. First one's free, no card.</p>
+<a class="btn" href="#free">Claim your free edit</a>
+<p class="small">Pre-launch. Not a streamer? <a href="#waitlist">Join the waitlist →</a></p>
+</div>
+<div><div class="phone"><video src="/clips/sword.mp4" poster="/clips/sword.jpg" autoplay muted loop playsinline preload="metadata"></video></div><span class="tape">↑ last guy brought a sword</span></div>
+</section>
 
-<section class="alt"><div class="wrap"><h2>How it works</h2><p class="lead">Set it up once. Then just stream.</p><div class="grid">
-<div class="card step"><div class="num">1</div><h3>Connect your channel</h3><p>Link Twitch, Kick, or YouTube and your Discord server.</p></div>
-<div class="card step"><div class="num">2</div><h3>Go live like normal</h3><p>Drop clip markers if you want. Chat does the rest.</p></div>
-<div class="card step"><div class="num">3</div><h3>Clips land in Discord</h3><p>When you end stream, we pull the VOD and send 5–10 ready-to-post clips.</p></div>
-<div class="card step"><div class="num">4</div><h3>One tap to post</h3><p>Approve and post to TikTok, Shorts, and Reels in one tap.</p></div>
-</div></div></section>
+<section class="meet">
+<img src="/img/sir-g.webp" alt="Sir Gremlington, an ink-drawn gremlin in a tweed suit holding a controller">
+<div class="txt"><p class="kicker">Meet the editor-in-chief</p><div class="sig">Sir Gremlington</div>
+<p>Monocle on, controller in hand. He's our mascot and the reminder behind every cut: if it's not sharp, it doesn't ship.</p></div>
+</section>
 
-<section id="examples"><div class="wrap"><h2>See it in action</h2><p class="lead">The kind of vertical, captioned clips that land in your Discord.</p><div class="clips"><div class="card clip"><video controls muted playsinline preload="none" poster="/clips/bot-door.jpg" width="720" height="1280"><source src="/clips/bot-door.mp4" type="video/mp4"></video><h3>the bot vs. the door</h3></div><div class="card clip"><video controls muted playsinline preload="none" poster="/clips/mom.jpg" width="720" height="1280"><source src="/clips/mom.mp4" type="video/mp4"></video><h3>teaching mom fortnite</h3></div><div class="card clip"><video controls muted playsinline preload="none" poster="/clips/triple-elim.jpg" width="720" height="1280"><source src="/clips/triple-elim.mp4" type="video/mp4"></video><h3>3 down, 0 damage</h3></div></div><p class="note" style="margin-top:28px">Examples hand-cut to show what ClipGremlin will make. The product isn't live yet. Join the waitlist to get in first.</p><p style="text-align:center;margin-top:16px"><a class="btn" href="#waitlist">Join the waitlist →</a></p></div></section>
+<section class="sec" id="proof">
+<p class="kicker">Proof · YouTube Shorts</p><h2>What our Shorts actually did.</h2>
+<div class="tally"><span class="big">2.3K</span><span>views on our YouTube Shorts in the last 28 days.<br>From YouTube Studio, as of Oct 26, 2026.</span></div>
+<div class="proof">
+<figure><div class="big">1.1K <small>views</small></div><video src="/clips/hello.mp4" poster="/clips/hello.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>"Well hello there"</b>Fortnite · 24 HP and still won</figcaption></figure>
+<figure><div class="big">1.1K <small>views</small></div><video src="/clips/jumping.mp4" poster="/clips/jumping.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>"Jumping won't save you"</b>Fortnite · caught mid-jump, three times</figcaption></figure>
+<figure class="minor"><img src="/clips/knocks.jpg" alt=""><div><div class="big">126 <small>views</small></div><figcaption><b>"Two knocks, then the double elim"</b>Fortnite · not every one pops. We keep cutting.</figcaption></div></figure>
+</div>
+<p class="small" style="margin-top:24px"><a href="https://www.youtube.com/@ClipGremlinHQ-f3l">Watch them on YouTube @ClipGremlinHQ-f3l →</a></p>
+</section>
 
-<section><div class="wrap"><h2>Built for personality, not just highlights</h2><p class="lead">Your funny moments are what make people follow. We clip those.</p><div class="grid">
-<div class="card"><div class="ic">📈</div><h3>Chat-spike detection</h3><p>When chat explodes, we notice. Hype, laughs, "LMAO" floods, all of it.</p></div>
-<div class="card"><div class="ic">📝</div><h3>Transcript-aware</h3><p>We read what you said to catch rants, bits, and one-liners, not just gameplay.</p></div>
-<div class="card"><div class="ic">📌</div><h3>Respects your markers</h3><p>Stream markers and viewer clips get priority.</p></div>
-<div class="card"><div class="ic">🎣</div><h3>Hook-first every time</h3><p>Every clip opens on the moment that stops the scroll, with a punchy title.</p></div>
-<div class="card"><div class="ic">📱</div><h3>Vertical + captions</h3><p>Facecam and gameplay are framed for 9:16 with bold, readable captions.</p></div>
-<div class="card"><div class="ic">♾️</div><h3>Unlimited stream hours</h3><p>Stream 2 hours or 12. Same flat price, no credits.</p></div>
-</div></div></section>
+<section class="sec">
+<p class="kicker">The reel</p><h2>Clips we've cut.</h2>
+<div class="reel">
+<figure><video src="/clips/sword.mp4" poster="/clips/sword.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>Knife to a gunfight</b>Fortnite · 15s</figcaption></figure>
+<figure><video src="/clips/triple.mp4" poster="/clips/triple.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>Triple elim</b>Fortnite · zero filler</figcaption></figure>
+<figure><video src="/clips/door.mp4" poster="/clips/door.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>Bot vs. door</b>Fortnite · lost to a door</figcaption></figure>
+<figure><video src="/clips/mom.mp4" poster="/clips/mom.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>Mom's calling</b>Fortnite · hot mic</figcaption></figure>
+</div>
+</section>
 
-<section class="alt" id="pricing"><div class="wrap"><h2>One price. No credit math.</h2><p class="lead">Founding members lock in the early-bird price.</p>
-<div class="card price"><div class="tag">Founding member</div><div class="amt">$15<small>/month</small></div>
-<ul><li>Unlimited stream hours</li><li>5–10 clips per stream</li><li>Twitch, Kick & YouTube</li><li>Discord delivery + one-tap posting</li><li>Cancel anytime in two clicks</li><li>7-day no-questions refund</li></ul>
-<a class="btn" href="#waitlist" style="width:100%">Reserve founding price</a></div></div></section>
+<section class="sec">
+<p class="kicker">How it works</p><h2>Three steps. No contract.</h2>
+<div class="steps">
+<div><div class="n">1</div><p>Send a VOD link and a rough timestamp.</p></div>
+<div><div class="n">2</div><p>A human editor cuts, captions and reframes it.</p></div>
+<div><div class="n">3</div><p>You add a trending sound and post.</p></div>
+</div>
+</section>
 
-<section><div class="wrap"><h2>FAQ</h2><div style="margin-top:36px">
-<details><summary>When does it launch?</summary><p>We're in early development. Waitlist members get access first, and we'll email you when your spot opens.</p></details>
-<details><summary>Do I need a big channel?</summary><p>No. It's built for streamers with 10 to 1,000 viewers who don't have an editor.</p></details>
-<details><summary>Which platforms are supported?</summary><p>Twitch, Kick, and YouTube for streams. TikTok, YouTube Shorts, and Instagram Reels for posting.</p></details>
-<details><summary>Is it really unlimited?</summary><p>Yes. Flat monthly price, no per-minute credits, no matter how long you stream.</p></details>
-<details><summary>Does it post without asking me?</summary><p>No. Clips go to your Discord first, and nothing gets posted until you tap approve.</p></details>
-<details><summary>How do I cancel?</summary><p>Two clicks from your account. If it's not for you within 7 days, we refund you in full.</p></details>
-</div></div></section>
+<section class="sec">
+<p class="kicker">House rules</p><h2>What makes a clip ours.</h2>
+<div class="rules">
+<p>Hook in the first second.</p>
+<p>No dead air. Clean cuts.</p>
+<p>Other tags blurred. Yours stays.</p>
+<p>It's a sword, not a stick.</p>
+<p>Short: 10–20 seconds, watched to the end.</p>
+<p>Game audio only. Your sound goes on top.</p>
+</div>
+</section>
 
-<section class="cta" id="waitlist"><div class="wrap" style="text-align:center"><h2>Stop clipping. Start growing.</h2><p class="lead">Join the waitlist and lock in $15/mo founding pricing.</p>
-<form action="https://formspree.io/f/meaevkgp" method="POST" id="waitlist-form">
-<input type="email" name="email" placeholder="you@email.com" required aria-label="Email address">
-<select name="source" required aria-label="Where did you hear about us?">
-<option value="" disabled selected>Where'd you hear about us?</option>
-<option value="x">X / Twitter</option>
-<option value="tiktok">TikTok</option>
-<option value="youtube">YouTube Shorts</option>
-<option value="instagram">Instagram / Reels</option>
-<option value="discord">Discord</option>
-<option value="reddit">Reddit</option>
-<option value="friend">Friend / streamer</option>
-<option value="other">Other</option>
-</select>
-<input type="hidden" name="utm_source" id="utm_source" value="">
-<input type="hidden" name="utm_medium" id="utm_medium" value="">
-<input type="hidden" name="utm_campaign" id="utm_campaign" value="">
-<input type="hidden" name="_subject" value="New ClipGremlin waitlist signup">
-<button class="btn" type="submit">Join waitlist</button></form>
-<script>
-(function(){
-  var q=new URLSearchParams(location.search);
-  ['utm_source','utm_medium','utm_campaign'].forEach(function(k){
-    var el=document.getElementById(k); if(el) el.value=q.get(k)||'';
-  });
-  var src=q.get('utm_source');
-  if(src){
-    var sel=document.querySelector('#waitlist-form select[name=source]');
-    var map={x:'x',twitter:'x',tiktok:'tiktok',reddit:'reddit',discord:'discord',yt:'youtube',youtube:'youtube',ig:'instagram',instagram:'instagram'};
-    var v=map[(src||'').toLowerCase()];
-    if(sel&&v){ sel.value=v; }
-  }
-})();
-</script>
-<p class="note">No spam. Just one email when your spot opens.</p></div></section>
-<footer><a href="/free-clip/">Free clip</a> · <a href="/powder-alternative/">Powder alternative</a> · <a href="mailto:hello@clipgremlin.com">hello@clipgremlin.com</a> · © 2026 ClipGremlin · Not affiliated with Twitch, Kick, YouTube, TikTok, or Meta.</footer>
-<script data-goatcounter="https://clipgremlin.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></body></html>
+<section class="sec" id="free">
+<p class="kicker">The offer</p><h2>Your first clip, free.</h2>
+<p class="dek">Leave your email and channel. We reply from hello@clipgremlin.com.</p>
+<form action="https://formspree.io/f/meaevkgp" method="POST">
+<input type="hidden" name="_subject" value="Homepage: free clip / waitlist"><input type="hidden" name="source" value="homepage-v4"><input type="text" name="_gotcha" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
+<input type="email" name="email" placeholder="you@email.com" required>
+<input type="text" name="channel" placeholder="twitch / youtube / tiktok handle">
+<button class="btn" type="submit">Send it</button>
+</form>
+<p class="small" id="waitlist">Not a streamer, just curious? Leave your email and skip the channel field. You'll join the waitlist.</p>
+</section>
+
+<footer class="foot"><span>© 2026 ClipGremlin · Pre-launch</span><span><a href="mailto:hello@clipgremlin.com">hello@clipgremlin.com</a> · <a href="https://www.youtube.com/@ClipGremlinHQ-f3l">YouTube @ClipGremlinHQ-f3l</a></span></footer>
+</div><script data-goatcounter="https://clipgremlin.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></body></html>
